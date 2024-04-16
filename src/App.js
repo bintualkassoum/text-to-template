@@ -1,5 +1,7 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import TemplateEditor from './TemplateEditor'; // Import the editor component
+import logo from './logo.svg';
 
 function App() {
   return (
@@ -18,6 +20,10 @@ function App() {
           Learn React
         </a>
       </header>
+      <div>
+        <h2>Template Editor</h2>
+        <TemplateEditor />  {/* Insert the editor component */}
+      </div>
     </div>
   );
 }
