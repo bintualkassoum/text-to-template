@@ -10,6 +10,7 @@ const port = process.env.PORT || 5001;
 app.use(cors({
   origin: 'http://localhost:3000'  // This should match the URL of your front-end
 }));
+
 app.use(express.json());
 
 app.get('/', (req, res) => {
