@@ -1,12 +1,15 @@
 const supabase = require('./supabaseClient');
 const express = require('express');
-const bodyParser = require('body-parser');
 const cors = require('cors');
+const bodyParser = require('body-parser');
+
 
 const app = express();
 const port = process.env.PORT || 5001;
 
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3000'  // This should match the URL of your front-end
+}));
 app.use(express.json());
 
 app.get('/', (req, res) => {
