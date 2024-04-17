@@ -15,6 +15,7 @@
     "@supabase/supabase-js": "^2.42.4",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
+    "daisyui": "^4.10.2",
     "express": "^4.19.2"
   },
   "devDependencies": {
